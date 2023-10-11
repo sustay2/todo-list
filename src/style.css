@@ -72,10 +72,12 @@ html {
 }
 
 .task-tab {
+    border: 1px solid rgba(0,0,0,0.3);
     background-color:white;
     padding: 20px 15px;
     width: 570px;
     height: auto;
+    position: relative;
     transition: 0.3s;
 }
 
@@ -97,6 +99,19 @@ html {
     font-size: 1em;
 }
 
+.task-tab #task-priority {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.task-tab #task-priority-indication {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
 .task-tab button {
     display: inline-block;
     width: 24px;
@@ -108,10 +123,17 @@ html {
 }
 
 .task-tab button#complete-task {
-    margin-left: 515px;
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    transform: translate(-8%, -10%);
 }
 
 .task-tab button img {
+    position: absolute;
+    bottom: 14%;
+    right: 3%;
+    transform: translate(-3%, -14%);
     width: 20px;
     height: 20px;
 }
