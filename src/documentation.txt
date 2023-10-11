@@ -1,0 +1,84 @@
+To-Do List Web Page Documentation
+  
+Table of Contents
+1. Introduction
+2. Usage
+3. HTML Structure
+4. JavaScript Functions
+
+
+1. Introduction
+The To-Do List Web Application is a simple web-based task management tool designed to help users keep track of their tasks and to-do items. 
+Users can add, edit, mark as completed, and delete tasks. The application features a responsive and user-friendly design with an intuitive 
+interface.
+
+
+2. Usage
+To use the To-Do List Web Application, follow these steps:
+
+Adding a Task:
+-Fill out the "Title" field with the task title.
+-Optionally, provide a task description in the "Description" field.
+-Select the task priority from the dropdown list (High, Medium, Low).
+-Click the "Add Task" button to add the task to the list.
+
+Editing a Task:
+-To edit a task, simply click on the title or description of the task, and you can make changes.
+
+Marking a Task as Completed:
+-To mark a task as completed, click the checkmark button associated with the task. A confirmation dialog will appear before marking the 
+task as done.
+
+-Deleting a Task:
+To delete a task, click the delete button associated with the task. A confirmation dialog will appear before deleting the task.
+  
+-Sorting Tasks:
+Tasks are automatically sorted by priority (High, Medium, Low) with High-priority tasks appearing at the top.
+
+
+3. HTML Structure
+The HTML structure of the To-Do List Web Application consists of three main sections:
+
+Head Section:
+-Contains metadata, CSS stylesheets, and the page title.
+
+Add Task Section:
+-Provides a form for adding new tasks, including fields for task title, description, and priority.
+-The "Add Task" button triggers the addTask() function to add a new task to the list.
+  
+Task Display Section:
+-Displays the list of tasks added by the user.
+-Completed tasks are visually distinguished with a strikethrough and light gray background.
+-The list is sorted by priority (High -> Medium -> Low).
+
+  
+4. JavaScript Functions
+The To-Do List Web Application uses JavaScript to add interactivity and functionality. The key JavaScript functions include:
+
+addTask(event):
+-Adds a new task to the list when the user submits the form.
+-Validates input and alerts the user if required fields are missing.
+
+saveTasksToSessionStorage():
+-Stores the task list in the browser's session storage to persist data between page reloads.
+
+loadTasksFromSessionStorage():
+-Retrieves task data from session storage and displays it when the page loads.
+
+displayTasks():
+-Renders the task list on the web page.
+-Sorts tasks by priority and displays them with options to edit, complete, and delete.
+
+completeTask(i):
+-Marks a task as completed when the user clicks the checkmark button.
+-Prompts for confirmation before marking the task as done.
+
+deleteTask(i):
+-Deletes a task when the user clicks the delete button.
+-Prompts for confirmation before deleting the task.
+
+clearInputFields():
+-Clears the input fields after adding a task.
+
+This documentation provides an overview of the To-Do List Web Application, its features, and the underlying HTML, JavaScript, and CSS 
+components. Users can effectively manage their tasks using this simple and intuitive web application.
