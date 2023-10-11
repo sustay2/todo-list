@@ -80,5 +80,5 @@ deleteTask(i):
 clearInputFields():
 -Clears the input fields after adding a task.
 
-This documentation provides an overview of the To-Do List Web Application, its features, and the underlying HTML, JavaScript, and CSS 
+This documentation provides an overview of the To-Do List Web Page, its features, and the underlying HTML, JavaScript, and CSS 
 components. Users can effectively manage their tasks using this simple and intuitive web application.
