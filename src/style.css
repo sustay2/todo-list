@@ -1,0 +1,117 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    background-color: rgb(205, 250, 213);
+    position: relative;
+}
+
+.add-task-container {
+    position: absolute;
+    display: inline-block;
+    top: 10%;
+    left: 17%;
+    transform: translate(-17%, 10%);
+    background-color: rgb(246, 253, 195);
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    box-shadow: 4px 6px rgba(0,0,0,0.06);
+}
+
+#add-task input, select {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#add-task input {
+    padding: 10px 224px 10px 10px;
+    transition: 0.3s;
+}
+
+#add-task select {
+    padding: 10px 261px 10px 10px;
+    transition: 0.3s;
+}
+
+#add-task input:hover, select:hover, input:focus, select:focus {
+    background-color:rgb(205, 250, 213);
+}
+
+#add-task button {
+    padding: 10px 171px 10px 171px;
+    background-color: rgb(205, 250, 213);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#add-task button:hover {
+    color: white;
+    background-color: rgb(17, 165, 43);
+}
+
+.task-container {
+    position: absolute;
+    display: inline-block;
+    top: 5%;
+    left: 75%;
+    transform: translate(-75%, 5%);
+    background-color:rgb(246, 253, 195);
+    padding: 20px;
+    width: 600px;
+    height: 650px;
+    overflow: auto;
+    box-shadow: 4px 6px rgba(0,0,0,0.06);
+}
+
+#no-task {
+    text-align: center;
+    font-weight: bold;
+}
+
+.task-tab {
+    background-color:white;
+    padding: 20px 15px;
+    width: 570px;
+    height: auto;
+    transition: 0.3s;
+}
+
+.task-tab:hover {
+    background-color: rgb(205, 250, 213);
+}
+
+.task-tab p, button {
+    display: block;
+}
+
+.task-tab #task-title {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.task-tab #task-description {
+    font-size: 1em;
+}
+
+.task-tab button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.task-tab button#complete-task {
+    margin-left: 515px;
+}
+
+.task-tab button img {
+    width: 20px;
+    height: 20px;
+}
