@@ -77,11 +77,19 @@ function displayTasks() {
         titleElement.id = "task-title";
         titleElement.contentEditable = true;
         titleElement.textContent = task.title;
+        titleElement.addEventListener("input", (event) => {
+            tasksList[i].title = event.target.textContent;
+            saveTasksToSessionStorage();
+        });
 
         const descElement = document.createElement("p");
         descElement.id = "task-description";
         descElement.contentEditable = true;
         descElement.textContent = task.description;
+        descElement.addEventListener("input", (event) => {
+            tasksList[i].description = event.target.textContent;
+            saveTasksToSessionStorage();
+        });
 
         const buttonComplete = document.createElement("button");
         buttonComplete.id = "complete-task";
