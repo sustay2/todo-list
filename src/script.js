@@ -91,6 +91,14 @@ function displayTasks() {
             saveTasksToSessionStorage();
         });
 
+        const priorityElement = document.createElement("p");
+        priorityElement.id = "task-priority";
+        priorityElement.textContent = "Priority:";
+
+        const priorityIndcElement = document.createElement("p");
+        priorityIndcElement.id = "task-priority-indication";
+        priorityIndcElement.textContent =  task.priority;
+
         const buttonComplete = document.createElement("button");
         buttonComplete.id = "complete-task";
         buttonComplete.innerHTML = "<img src='tick.png' />";
@@ -113,6 +121,8 @@ function displayTasks() {
 
         taskTab.appendChild(titleElement);
         taskTab.appendChild(descElement);
+        taskTab.appendChild(priorityElement);
+        taskTab.appendChild(priorityIndcElement);
         taskTab.appendChild(buttonComplete);
         taskTab.appendChild(buttonDelete);
 
